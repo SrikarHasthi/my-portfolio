@@ -1,0 +1,27 @@
+.main-intro-text {
+  position: absolute;
+  top: 18rem;
+  left: 10rem;
+  text-align: left;
+
+  h1 {
+    font-size: 4rem;
+    color: #f6f6f6;
+    opacity: 0.98;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+    color: rgb(147 144 144);
+    margin-bottom: 1rem;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 800px) {
+  .custom-shape-divider-top-1706220601 svg {
+    height: 60px;
+  }
+}

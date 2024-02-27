@@ -12,11 +12,18 @@
     "@types/jest": "^29.5.11",
     "@types/node": "^20.11.6",
     "@types/react": "^18.2.48",
+    "@types/react-animate-on-scroll": "^2.1.8",
     "@types/react-dom": "^18.2.18",
+    "animate.css": "^4.1.1",
     "cra-template-particles-typescript": "3.0.0",
     "react": "^18.2.0",
+    "react-animate-on-scroll": "^2.1.7",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.3",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
+    "react-type-animation": "^3.2.0",
+    "sass": "^1.70.0",
     "tslib": "^2.6.2",
     "tsparticles": "^3.1.0",
     "typescript": "^5.3.3",
@@ -42,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-router-hash-link": "^2.4.9"
   }
 }
