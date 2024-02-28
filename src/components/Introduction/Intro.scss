@@ -1,7 +1,7 @@
 .main-intro-text {
   position: absolute;
   top: 18rem;
-  left: 10rem;
+  left: 15rem;
   text-align: left;
 
   h1 {
@@ -17,6 +17,25 @@
     color: rgb(147 144 144);
     margin-bottom: 1rem;
     font-weight: 400;
+  }
+}
+
+.scroll-down-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 15rem;
+  height: 5rem;
+  width: 17rem;
+  position: absolute;
+  color: white;
+  top: 35rem;
+  font-size: 2.5rem;
+  animation: shakeHead 5s infinite;
+  --animate-duration: 2s;
+
+  img {
+    height: 80%;
   }
 }
 
