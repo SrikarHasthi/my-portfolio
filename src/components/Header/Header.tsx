@@ -4,7 +4,7 @@ import { useState } from 'react'
 import "./Header.scss"
 
 // import CV from '../../assets/CV_VinayakSingh.pdf' 
-export function Header() {
+export const Header = () => {
   const [isActive, setActive] = useState(false)
 
   function toggleTheme() {
