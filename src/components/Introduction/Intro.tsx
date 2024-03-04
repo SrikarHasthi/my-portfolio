@@ -27,7 +27,7 @@ const Intro = () => {
     return (
         <div className="App">
             {init && (
-                <div style={{ height: "50rem" }}>
+                <div style={{ height: "74rem" }}>
                     <Particles
                         options={particlesOptions as unknown as ISourceOptions}
                     />

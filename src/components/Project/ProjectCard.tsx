@@ -1,23 +1,44 @@
 import React, { useState } from 'react'
 import './Project.scss'
+import { useInView } from 'react-intersection-observer';
 
-export const ProjectCard = () => {
+interface Props {
+    projectDetails: {
+        title: string,
+        desc: string,
+        demoLink: string,
+        githubLink: string,
+    }
+}
 
-  return (
-    <div className='project-card-main-container'>
-        <div className='project-card-image'>
-            
-        </div>
-        <div className='project-card-title'>
-            Resume Builder
-        </div>
-        <div className='project-card-description'>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos iusto, itaque iste nihil aperiam laboriosam vitae nam laudantium. Nemo incidunt quidem optio animi sit aliquam suscipit quibusdam ullam corrupti ducimus.
-        </div>
-        <div className='project-card-links-container'>
-            <div className='project-card-links'>Demo</div>
-            <div className='project-card-links'>Github</div>
-        </div>
-    </div>
-  )
+export const ProjectCard = ({ projectDetails }: Props) => {
+    const { ref, inView, entry } = useInView({
+        threshold: 0,
+      });
+
+
+    return (
+        <>
+                <div ref={ref} className={`project-card-main-container ${inView ? "project-card-main-container-animation" : ""}`} >
+                    {/* <div className='project-card-image'>
+        </div> */}
+                    <div className='project-card-title'>
+                        {projectDetails.title}
+                    </div>
+                    <div className='project-card-description'>
+                        {projectDetails.desc}
+                    </div>
+                    <div className='project-card-links-container'>
+                        {
+                            projectDetails.demoLink !== "" &&
+                            <a href={projectDetails.demoLink} target='_blank' className='project-card-links'>Demo</a>
+                        }
+                        {
+                            projectDetails.githubLink !== "" &&
+                            <a href={projectDetails.githubLink} target='_blank' className='project-card-links'>Github</a>
+                        }
+                    </div>
+                </div>
+        </>
+    )
 }
