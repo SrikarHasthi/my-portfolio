@@ -1,3 +1,5 @@
+@use '../../index.scss' as m;
+
 .main-intro-text {
   position: absolute;
   top: 18rem;
@@ -5,7 +7,7 @@
   text-align: left;
 
   h1 {
-    font-size: 4rem;
+    font-size:  m.$text-heading-size;
     color: #f6f6f6;
     opacity: 0.98;
     font-weight: 400;

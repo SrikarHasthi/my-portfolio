@@ -39,7 +39,7 @@ const Intro = () => {
                                 'Hi, I\'m Srikar.',
                                 () => setShowSubtitle(true)
                             ]}
-                            speed={{ type: "keyStrokeDelayInMs", value: 150 }}
+                            speed={{ type: "keyStrokeDelayInMs", value: 100 }}
                             wrapper="h1"
                             repeat={0}
                         />
