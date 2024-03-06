@@ -3,14 +3,18 @@ import './AboutMe.scss'
 import meditation from '../../assets/Meditation-bro.svg'
 import { Skills } from './Skills'
 import { Tooltip } from 'react-tooltip'
+import 'animate.css';
+import { useInView } from 'react-intersection-observer'
 export const AboutMe = () => {
-
+    const { ref, inView, entry } = useInView({
+        threshold: 0,
+      });
     return (
         <div className='about-me-main-conatainer'>
-            <div className='about-me-container'>
+            <div ref={ref} className={`about-me-container ${inView && "animate__animated animate__fadeInLeft"}`}>
                 <h2>Who I am</h2>
                 <p>
-                    Hey there, I'm [Your Name], a Software Developer fueled by a love for creating tech solutions that matter. With a knack for JavaScript, Java, Python, and more, I dive deep into web development, specializing in React.js and Node.js.
+                    Hey there, I'm Srikar Hasthi, a Software Developer fueled by a love for creating tech solutions that matter. With a knack for JavaScript, Java, Python, and more, I dive deep into web development, specializing in React.js and Node.js.
                     <br /><br />
 
                     When I'm not coding, you'll catch me exploring new tech, jamming at hackathons, and diving into open-source projects. I'm all about using tech for good and love teaming up with fellow enthusiasts.
@@ -43,7 +47,7 @@ export const AboutMe = () => {
 
                 </div>
             </div>
-            <div className='about-me-image'>
+            <div className={`about-me-image ${inView && "animate__animated animate__fadeInRight"}`}>
                 <img src={meditation} />
             </div>
 
