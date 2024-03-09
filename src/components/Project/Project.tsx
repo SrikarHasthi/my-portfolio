@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Project.scss'
 import { ProjectCard } from './ProjectCard'
 import { projectDetails } from './ProjectDetails'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 export const Project = () => {
   console.log(projectDetails);
@@ -16,7 +17,11 @@ export const Project = () => {
           projectDetails.map((e, key) => {
             console.log(e)
 
-            return <ProjectCard projectDetails={e} />
+            return (
+              <ScrollAnimation animateIn="pulse">
+                <ProjectCard projectDetails={e} />
+              </ScrollAnimation>
+            )
           })
         }
       </div>

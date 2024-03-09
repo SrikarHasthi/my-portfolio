@@ -19,7 +19,7 @@ export const ProjectCard = ({ projectDetails }: Props) => {
 
     return (
         <>
-                <div ref={ref} className={`project-card-main-container ${inView ? "project-card-main-container-animation" : ""}`} >
+                <div ref={ref} className={`project-card-main-container`} >
                     {/* <div className='project-card-image'>
         </div> */}
                     <div className='project-card-title'>

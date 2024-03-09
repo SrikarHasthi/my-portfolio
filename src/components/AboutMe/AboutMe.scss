@@ -1,8 +1,8 @@
 @use "../../index.scss" as m;
 
-.about-me-main-conatainer {
+.about-me-main-container {
   background: #3b3737;
-  height: 100rem;
+  height: fit-content;
   display: flex;
   justify-content: space-evenly;
   padding-top: 8rem;
@@ -30,9 +30,7 @@
   width: 350rem;
   height: 60rem;
 
-  img {
-    height: 100%;
-  }
+
 }
 
 .about-me-skills-container {
@@ -44,9 +42,20 @@
 .about-me-skills {
     width: 5rem;
     margin-right: 0.5rem;
-
     img {
         width: 100%;
         height: 100%;
     }
+}
+
+.about-me-imagee {
+    width: 100%;
+    height: 100%;
+    img {
+        height: 100%;
+      }
+}
+
+.skills-image-tooltip {
+  top: 540px !important;
 }

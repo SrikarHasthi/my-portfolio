@@ -28,9 +28,11 @@ margin-bottom: 1rem;
     margin: 3rem 0;
     background: gainsboro;
     border-radius: 1.3rem;
-    overflow: hidden; 
-    transition: all .7s ease-in-out;
-    height: 0;
+    // overflow: hidden; 
+    // transition: all .7s ease-in-out;
+    // height: 0;
+    height: 23rem;
+    padding: 2rem;
 
     > * {
         margin-bottom: 1.5rem;
@@ -45,7 +47,7 @@ margin-bottom: 1rem;
 
 .project-card-main-container-animation {
     height: 23rem;
-    padding: 2rem
+    padding: 2rem;
   }
 
 .project-card-image {

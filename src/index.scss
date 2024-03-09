@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
@@ -14,3 +15,4 @@ code {
 
 
 $text-heading-size: 4rem;
+$experience-timeline-width: 75%;
