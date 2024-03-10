@@ -1,5 +1,6 @@
 import "./App.scss";
 import { AboutMe } from "./components/AboutMe/AboutMe";
+import { Contact } from "./components/Contact/Contact";
 import { Experience } from "./components/Experience/Experience";
 import { Header } from "./components/Header/Header";
 import Intro from "./components/Introduction/Intro";
@@ -13,6 +14,7 @@ export const Home = () => {
             <Project/>
             <AboutMe/>
             <Experience/>
+            <Contact/>
         </div>
     );
 }
