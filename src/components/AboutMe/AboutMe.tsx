@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './AboutMe.scss'
 import meditation from '../../assets/Meditation-bro.svg'
 import { Skills } from './Skills'
@@ -31,16 +31,16 @@ export const AboutMe = () => {
                     <h3>Here are my main skills: </h3>
                     <div className='about-me-skills-container'>
                         {
-                            Skills.map((e, key) => {
+                            Skills.map((e, id) => {
                                 return (
-                                    <>
-                                        <div data-tooltip-id={"skills-tooltip" + key} className='about-me-skills'>
-                                            <img src={e.src} />
+                                    <div key={id}>
+                                        <div data-tooltip-id={"skills-tooltip" + id} className='about-me-skills'>
+                                            <img src={e.src} alt={e.name}/>
                                         </div>
-                                        <Tooltip id={"skills-tooltip" + key} place="bottom">
+                                        <Tooltip id={"skills-tooltip" + id} place="bottom">
                                             {e.name}
                                         </Tooltip>
-                                    </>
+                                    </div>
                                 )
                             })
                         }
@@ -50,7 +50,7 @@ export const AboutMe = () => {
             </div>
             <div className="about-me-image">
                 <ScrollAnimation animateIn="fadeInRight" className='about-me-imagee'>
-                    <img src={meditation} data-tooltip-id="skills-image-tooltip" />
+                    <img src={meditation} data-tooltip-id="skills-image-tooltip" alt='meditation'/>
                     <Tooltip id="skills-image-tooltip" place="bottom" className='skills-image-tooltip' >
                         {"Credit: storyset.com"}
                     </Tooltip>

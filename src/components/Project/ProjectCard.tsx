@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Project.scss'
 import { useInView } from 'react-intersection-observer';
 
@@ -12,7 +12,7 @@ interface Props {
 }
 
 export const ProjectCard = ({ projectDetails }: Props) => {
-    const { ref, inView, entry } = useInView({
+    const { ref } = useInView({
         threshold: 0,
       });
 
@@ -31,11 +31,11 @@ export const ProjectCard = ({ projectDetails }: Props) => {
                     <div className='project-card-links-container'>
                         {
                             projectDetails.demoLink !== "" &&
-                            <a href={projectDetails.demoLink} target='_blank' className='project-card-links'>Demo</a>
+                            <a href={projectDetails.demoLink} target='_blank' rel="noreferrer" className='project-card-links'>Demo</a>
                         }
                         {
                             projectDetails.githubLink !== "" &&
-                            <a href={projectDetails.githubLink} target='_blank' className='project-card-links'>Github</a>
+                            <a href={projectDetails.githubLink} target='_blank' rel="noreferrer" className='project-card-links'>Github</a>
                         }
                     </div>
                 </div>

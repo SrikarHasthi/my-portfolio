@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Experience.scss'
 
 interface Props {
@@ -9,9 +9,9 @@ export const ExperienceSkillsbadge = ({ skills }: Props) => {
     return (
         <>
             {
-                skills.map((e) => {
+                skills.map((e, id) => {
                     return (
-                        <div className='experience-skills-badge-container'>
+                        <div className='experience-skills-badge-container' key={id}>
                             <div className='experience-skills-badge'>
                                 {e}
                             </div>

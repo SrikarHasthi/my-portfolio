@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Tooltip } from 'react-tooltip'
 import working from '../../assets/Working.svg'
 import loading from '../../assets/loading-svgrepo-com.svg'
@@ -29,7 +29,7 @@ export const Experience = () => {
         <div className='experience-main-conatainer'>
             <div className="experience-image">
                 <ScrollAnimation animateIn="fadeInLeft" className='experience-imagee'>
-                    <img src={working} data-tooltip-id="experience-image-tooltip" />
+                    <img src={working} data-tooltip-id="experience-image-tooltip" alt='working'/>
                     <Tooltip id="experience-image-tooltip" place="bottom" className='experience-image-tooltip' >
                         {"Credit: storyset.com"}
                     </Tooltip>
@@ -65,7 +65,7 @@ export const Experience = () => {
                         </ScrollAnimation>
                         <ScrollAnimation animateIn="fadeInUp">
                             <div className="container">
-                                <img className='timeline-loading-image' src={loading} />
+                                <img className='timeline-loading-image' src={loading} alt='loading'/>
                             </div>
                         </ScrollAnimation>
                     </div>

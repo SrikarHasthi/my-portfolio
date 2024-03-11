@@ -8,7 +8,7 @@ import { ISourceOptions } from "@tsparticles/engine";
 import { TypeAnimation } from "react-type-animation";
 import ScrollDownSvg from "../../assets/scroll-down.svg"
 import 'animate.css';
-import { NavHashLink } from "react-router-hash-link";
+// import { NavHashLink } from "react-router-hash-link";
 
 
 const Intro = () => {
