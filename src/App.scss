@@ -186,3 +186,24 @@ button:disabled,
     }
   }
 }
+
+
+.scroll-to-top {
+  position: fixed;
+  right: 10px;
+  bottom: 60px;
+  height: 4rem;
+  width: 4rem;
+  z-index: 999;
+  display: flex;
+
+  button {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
+}

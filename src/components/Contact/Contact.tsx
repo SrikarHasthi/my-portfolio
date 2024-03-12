@@ -18,15 +18,18 @@ export const Contact = () => {
     const contactDetails = [
         {
             img: mail,
-            desc: "srikarhasthi@gmail.com"
+            desc: "srikarhasthi@gmail.com",
+            href: "mailto:srikarhasthi@gmail.com"
         },
         {
             img: phone,
-            desc: "+1 (514) 586-7745"
+            desc: "+1 (514) 586-7745",
+            href: "tel:+15145867745"
         },
         {
             img: location,
-            desc: "Montreal, Quebec, Canada - H3H 2N9"
+            desc: "Montreal, Quebec, Canada - H3H 2N9",
+            href: "https://maps.app.goo.gl/JtxQg6YH6hQ9uNjf9"
         },
     ]
 
@@ -105,9 +108,9 @@ export const Contact = () => {
                         contactDetails.map((e, id) => {
                             return (
                                 <div className='contacts-others' key={id}>
-                                    <div className='contacts-others-icon'>
+                                    <a className='contacts-others-icon' href={e.href} target='_blank' rel="noreferrer">
                                         <img src={e.img} alt={e.desc} />
-                                    </div>
+                                    </a>
                                     <p>{e.desc}</p>
                                 </div>
                             )
