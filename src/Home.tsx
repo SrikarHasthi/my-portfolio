@@ -7,6 +7,7 @@ import { Header } from "./components/Header/Header";
 import Intro from "./components/Introduction/Intro";
 import { Project } from "./components/Project/Project";
 import scroll from './assets/scrollToTop.svg'
+import { Footer } from "./components/Footer/Footer";
 
 export const Home = () => {
 
@@ -35,6 +36,7 @@ export const Home = () => {
             <AboutMe />
             <Experience />
             <Contact />
+            <Footer />
             {
                 showScrollToTop && 
                     <div className="scroll-to-top" onClick={handleScrollToTop}>
