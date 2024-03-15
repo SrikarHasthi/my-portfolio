@@ -1,13 +1,13 @@
 import React from 'react'
 import './Project.scss'
 import { ProjectCard } from './ProjectCard'
-import { projectDetails } from './ProjectDetails'
 import ScrollAnimation from 'react-animate-on-scroll'
+import { projectDetails } from '../../StaticData'
 
 export const Project = () => {
 
   return (
-    <div className='project-main-container'>
+    <div className='project-main-container' id="project">
       <div className='project-heading-conatiner'>
         Projects
       </div>
@@ -16,7 +16,7 @@ export const Project = () => {
           projectDetails.map((e, id) => {
 
             return (
-              <div key={id}>
+              <div key={id} style={{overflow:"hidden"}}>
               <ScrollAnimation animateIn="pulse">
                 <ProjectCard projectDetails={e} />
               </ScrollAnimation>

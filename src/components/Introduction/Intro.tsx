@@ -8,8 +8,9 @@ import { ISourceOptions } from "@tsparticles/engine";
 import { TypeAnimation } from "react-type-animation";
 import ScrollDownSvg from "../../assets/scroll-down.svg"
 import 'animate.css';
-// import { NavHashLink } from "react-router-hash-link";
-
+import { BrowserRouter } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
+import { introSocialIcons } from "../../StaticData";
 
 const Intro = () => {
     const [init, setInit] = useState(false);
@@ -25,7 +26,7 @@ const Intro = () => {
     }, []);
 
     return (
-        <div className="App">
+        <div className="App" id="home">
             {init && (
                 <div style={{ height: "74rem" }}>
                     <Particles
@@ -96,14 +97,43 @@ const Intro = () => {
                     </div>
                     {
                         showScrollDown &&
-                        <div className="scroll-down-container animate__animated animate__headShake">
-                            Scroll down
-                            <img
-                                src={ScrollDownSvg}
-                                alt="scroll-down"
-                            />
-                        </div>
+                        <BrowserRouter>
+                            <NavHashLink smooth to="#project" >
+                                <div className="scroll-down-container animate__animated animate__headShake">
+                                    Scroll down
+                                    <img
+                                        src={ScrollDownSvg}
+                                        alt="scroll-down"
+                                    />
+                                </div>
+                            </NavHashLink>
+                        </BrowserRouter>
+
                     }
+
+                    <div className="main-intro-contact-container">
+                        <div className="main-intro-contact-button  animate__animated animate__fadeInUp animate__delay-1s">
+                            <BrowserRouter>
+                                <NavHashLink smooth to="#contact" className="button">Contact</NavHashLink>
+                            </BrowserRouter>
+                        </div>
+                        <div className="main-intro-contact-icons  animate__animated animate__fadeInUp animate__delay-1s">
+                            <div className="social-media">
+                                {
+                                    introSocialIcons.map((e, id) => {
+                                        return <a
+                                            href={e.href}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            key={id}
+                                        >
+                                            <img src={e.img} alt={e.img} />
+                                        </a>
+                                    })
+                                }
+                            </div>
+                        </div>
+                    </div>
 
 
                     <div className="custom-shape-divider-top-1706220601">

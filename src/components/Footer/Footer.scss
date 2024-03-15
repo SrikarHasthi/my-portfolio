@@ -48,11 +48,13 @@
     top: 13rem;
     width: 7rem;
     transform: translateY(-50%) rotate(0deg); /* Initial rotation */
-    animation: moveText 15s linear infinite, rotateText 6s linear infinite; /* Apply both animations */  }
+    animation: moveText 11s linear infinite, rotateText 6s linear infinite; /* Apply both animations */  
+  }
+    
 
 @keyframes moveText {
   from {
-    left: -105rem;
+    left: 0;
   }
   to {
     left: calc(100% - 100px); /* Adjust the final position as needed */

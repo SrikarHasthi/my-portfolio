@@ -41,6 +41,35 @@
   }
 }
 
+.main-intro-contact-container {
+  position: absolute;
+  top: 48rem;
+  left: 15rem;
+  justify-content: center;
+  text-align: left;
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+
+  .button {
+    padding: 1.4rem 6rem;
+  }
+}
+
+.main-intro-contact-icons {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+
+  img {
+    width: 4.3rem;
+    margin-right: 1rem;
+  }
+}
+
+
 @media (max-width: 800px) {
   .custom-shape-divider-top-1706220601 svg {
     height: 60px;

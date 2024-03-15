@@ -6,7 +6,7 @@ import { Tooltip } from 'react-tooltip'
 import ScrollAnimation from 'react-animate-on-scroll';
 export const AboutMe = () => {
     return (
-        <div className='about-me-main-container'>
+        <div className='about-me-main-container' id="aboutMe">
             <div className={`about-me-container`}>
                 <h2>Who I am</h2>
                 <ScrollAnimation animateIn="fadeInLeft">

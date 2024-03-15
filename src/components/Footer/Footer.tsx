@@ -27,7 +27,7 @@ export const Footer = () => {
                     <Particles id="tsparticle2"
                         options={particlesOptions2 as unknown as ISourceOptions}
                     />
-                    <img className="moving-img" src={bye} style={{ left: '500px' }}/>
+                    <img className="moving-img" src={bye}/>
                 </div>
 
             )}

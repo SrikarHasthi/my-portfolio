@@ -528,7 +528,7 @@
     },
     "rate": {
       "quantity": 1,
-      "delay": 11
+      "delay": 0
     },
     "shape": {
       "options": {},
@@ -549,7 +549,7 @@
         "type": "images",
         "options": {
           "images": {
-            "src": "C:\\Users\\hsrik\\Desktop\\cyan_amongus.png",
+            "src": "../../cyan_amongus.png",
             "width": 50,
             "height": 34
           }

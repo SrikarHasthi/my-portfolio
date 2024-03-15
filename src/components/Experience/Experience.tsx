@@ -5,25 +5,9 @@ import loading from '../../assets/loading-svgrepo-com.svg'
 import './Experience.scss'
 import ScrollAnimation from 'react-animate-on-scroll';
 import { ExperienceSkillsbadge } from './ExperienceSkillsBadge';
+import { animakerSkills, ctsSkills } from '../../StaticData'
 
 export const Experience = () => {
-
-    const animakerSkills = [
-        "ReactJs",
-        "JavaScript",
-        "Redux",
-        "Rest APIs",
-        "Git",
-        "Scrum"
-    ];
-
-    const ctsSkills = [
-        "C#",
-        "Asp.Net",
-        "MySql",
-        "Entity Framework",
-        "MVC",
-    ]
 
     return (
         <div className='experience-main-conatainer'>

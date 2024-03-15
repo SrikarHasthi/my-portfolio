@@ -681,3 +681,12 @@
     }
   }
 }
+
+
+
+{
+  "background": {
+    "color": "#000000"
+  },
+  "fullScreen": false
+}

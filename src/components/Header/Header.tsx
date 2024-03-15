@@ -1,16 +1,18 @@
-import { BrowserRouter as Router } from 'react-router-dom'
-import { NavHashLink, HashLink } from 'react-router-hash-link'
-import { useState } from 'react'
-import "./Header.scss"
+import { BrowserRouter as Router } from 'react-router-dom';
+import { NavHashLink, HashLink } from 'react-router-hash-link';
+import { useState } from 'react';
+// @ts-ignore
+import resume from '../../assets/Srikar_Hasthi_Resume.pdf';
+import "./Header.scss";
 
 // import CV from '../../assets/CV_VinayakSingh.pdf' 
 export const Header = () => {
   const [isActive, setActive] = useState(false)
 
-  function toggleTheme() {
-    let html = document.getElementsByTagName('html')[0]
-    html.classList.toggle('light')
-  }
+  // function toggleTheme() {
+  //   let html = document.getElementsByTagName('html')[0]
+  //   html.classList.toggle('light')
+  // }
 
   function closeMenu() {
     setActive(false)
@@ -24,20 +26,20 @@ export const Header = () => {
           <span> Hasthi</span>
         </HashLink>
 
-        <input
+        {/* <input
           onChange={toggleTheme}
           className="container_toggle"
           type="checkbox"
           id="switch"
           name="mode"
         />
-        <label htmlFor="switch">Toggle</label>
+        <label htmlFor="switch">Toggle</label> */}
 
         <nav className={isActive ? 'active' : ''}>
           <NavHashLink smooth to="#home" onClick={closeMenu}>
             Home
           </NavHashLink>
-          <NavHashLink smooth to="#about" onClick={closeMenu}>
+          <NavHashLink smooth to="#aboutMe" onClick={closeMenu}>
             About me
           </NavHashLink>
           <NavHashLink smooth to="#project" onClick={closeMenu}>
@@ -46,8 +48,8 @@ export const Header = () => {
           <NavHashLink smooth to="#contact" onClick={closeMenu}>
             Contact
           </NavHashLink>
-          <a download className="button">
-            CV 
+          <a href={resume} download="Srikar_Hasthi_Resume.pdf" className="button">
+            Resume 
           </a>
         </nav>
 

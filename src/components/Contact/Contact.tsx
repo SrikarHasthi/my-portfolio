@@ -1,37 +1,13 @@
 import React, { useState } from 'react';
 import './Contact.scss';
 import send from '../../assets/send-2-svgrepo-com.svg';
-import mail from '../../assets/email-svgrepo-com.svg';
-import phone from '../../assets/phone-svgrepo-com.svg';
-import location from '../../assets/location-pin-alt-1-svgrepo-com.svg';
-import linkedIn from '../../assets/linkedin-161-svgrepo-com.svg';
-import github from '../../assets/github-142-svgrepo-com.svg';
-import twitter from '../../assets/twitter-154-svgrepo-com.svg';
 import contactsOrange from '../../assets/contactsOrange.svg';
 import ScrollAnimation from 'react-animate-on-scroll';
 import emailjs from '@emailjs/browser';
 import CustomLoader from '../CustomLoader';
+import { contactDetails, socialIcons } from '../../StaticData';
 
 export const Contact = () => {
-
-    const socialIcons = [linkedIn, github, twitter];
-    const contactDetails = [
-        {
-            img: mail,
-            desc: "srikarhasthi@gmail.com",
-            href: "mailto:srikarhasthi@gmail.com"
-        },
-        {
-            img: phone,
-            desc: "+1 (514) 586-7745",
-            href: "tel:+15145867745"
-        },
-        {
-            img: location,
-            desc: "Montreal, Quebec, Canada - H3H 2N9",
-            href: "https://maps.app.goo.gl/JtxQg6YH6hQ9uNjf9"
-        },
-    ]
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -63,7 +39,7 @@ export const Contact = () => {
     }
 
     return (
-        <div className='contacts-main-container'>
+        <div className='contacts-main-container' id='contact'>
             <h2>Get In Touch</h2>
             <div className='contacts-sub-container'>
                 <ScrollAnimation animateIn="fadeInLeft">
@@ -119,9 +95,9 @@ export const Contact = () => {
                     <div className='contacts-others-socials'>
                         {
                             socialIcons.map((e, id) => {
-                                return <div className='contacts-others-icon' key={id}>
-                                    <img src={e} alt={e} />
-                                </div>
+                                return <a href={e.href} target='_blank'  rel="noreferrer" className='contacts-others-icon' key={id}>
+                                    <img src={e.img} alt={e.img} />
+                                </a>
                             })
                         }
                         <div className='contacts-bottom-icon'>
