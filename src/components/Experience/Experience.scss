@@ -1,0 +1,223 @@
+@use "../../index.scss" as m;
+
+.experience-main-conatainer {
+  background: #3b3737;
+  height: fit-content;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 8rem;
+}
+
+.experience-container {
+  text-align: justify;
+  padding-right: 11rem;
+
+  h2 {
+    font-size: m.$text-heading-size;
+  }
+
+  p {
+    color: white;
+    font-size: 1.7rem;
+  }
+
+  > * {
+    padding-bottom: 3rem;
+  }
+}
+
+.experience-image {
+  // width: 150rem;
+  height: 60rem;
+}
+
+.experience-skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}
+
+.experience-skills {
+  width: 5rem;
+  margin-right: 0.5rem;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.experience-imagee {
+  width: 100%;
+  height: 100%;
+  img {
+    height: 100%;
+  }
+}
+
+.experience-image-tooltip {
+  top: 540px !important;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: m.$experience-timeline-width;
+  margin-left: -3px;
+  z-index: -1;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: m.$experience-timeline-width;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #ff9f55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: m.$experience-timeline-width;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #3f7ebd85;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #3f7ebd85 transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: #3f7ebd85;
+  position: relative;
+  border-radius: 6px;
+
+  h3, h4 {
+    text-align: left;
+  }
+
+  h3 {
+    padding-bottom: 0.5rem;
+  }
+
+  h5 {
+    padding-bottom: 1.3rem;
+  }
+}
+
+.experience-container-skills{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.experience-skills-badge-container {
+  background-color: #2232db80;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rem;
+  padding: 5px 8px;
+  font-size: 1.3rem;
+  width: fit-content;
+  margin: 0.2rem;
+}
+
+.timeline-loading-image {
+  width: 2rem;
+  position: absolute;
+  z-index: 99;
+  top: 21px;
+  right: -10px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}

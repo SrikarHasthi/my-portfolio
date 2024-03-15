@@ -1,0 +1,13 @@
+diff --git a/node_modules/react-loader-spinner/dist/module.js b/node_modules/react-loader-spinner/dist/module.js
+index 6f9cfd2..c3c46bc 100644
+--- a/node_modules/react-loader-spinner/dist/module.js
++++ b/node_modules/react-loader-spinner/dist/module.js
+@@ -1580,7 +1580,7 @@ const $56d89154a59e79d3$export$f8e5ae7506d65b32 = ({ height: height = 80, width:
+                                 })
+                             }),
+                             /*#__PURE__*/ (0, $fJU0O$jsx)("circle", {
+-                                fill: "#fff",
++                                fill: "#ca2f00",
+                                 cx: "36",
+                                 cy: "18",
+                                 r: processedRadius,

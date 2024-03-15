@@ -528,7 +528,7 @@
     },
     "rate": {
       "quantity": 1,
-      "delay": 7
+      "delay": 0
     },
     "shape": {
       "options": {},
@@ -549,7 +549,7 @@
         "type": "images",
         "options": {
           "images": {
-            "src": "https://particles.js.org/images/cyan_amongus.png",
+            "src": "../../cyan_amongus.png",
             "width": 50,
             "height": 34
           }
@@ -559,7 +559,7 @@
         "value": 40
       },
       "move": {
-        "speed": 5,
+        "speed": 6,
         "outModes": {
           "default": "none",
           "right": "destroy"
@@ -583,7 +583,7 @@
     },
     "position": {
       "x": -5,
-      "y": 75
+      "y": 65
     }
   },
   "motion": {
