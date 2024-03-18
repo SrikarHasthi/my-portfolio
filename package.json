@@ -1,6 +1,7 @@
 {
   "name": "my-portfolio",
   "version": "0.1.0",
+  "homepage": "https://srikarhasthi.github.io/my-portfolio",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
@@ -17,6 +18,7 @@
     "@types/react-dom": "^18.2.18",
     "animate.css": "^4.1.1",
     "cra-template-particles-typescript": "3.0.0",
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-animate-on-scroll": "^2.1.7",
     "react-circular-progressbar": "^2.1.0",
@@ -39,7 +41,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postinstall": "npx patch-package"
+    "postinstall": "npx patch-package",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
