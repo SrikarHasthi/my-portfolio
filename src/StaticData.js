@@ -75,13 +75,6 @@ export const ctsSkills = [
 
 export const projectDetails = [
     {
-        title: "Taskify",
-        desc: "It is a productivity app designed to enhance task management with an added timer feature. With Taskify, users can prioritize activities, set timers, and boost productivity by seamlessly integrating time management into their workflow.",
-        demoLink: "https://srikarhasthi.github.io/Taskify/",
-        githubLink: "https://github.com/SrikarHasthi/Taskify",
-        skills: "ReactJs Typescript Scss"
-    },
-    {
         title: "YogicLife",
         desc: "This homepage, meticulously crafted in React from a Figma design, invites you into a realm of daily practices led by traditional Indian practitioners. Explore the transformative power of yoga, and meditation, tailored for modern seekers.",
         demoLink: "https://srikarhasthi.github.io/ours-assignment/",
@@ -94,6 +87,13 @@ export const projectDetails = [
         demoLink: "",
         githubLink: "https://github.com/SrikarHasthi/JobSeekr",
         skills: "ReactJs Css Javascript NodeJs"
+    },
+    {
+        title: "Taskify",
+        desc: "It is a productivity app designed to enhance task management with an added timer feature. With Taskify, users can prioritize activities, set timers, and boost productivity by seamlessly integrating time management into their workflow.",
+        demoLink: "https://srikarhasthi.github.io/Taskify/",
+        githubLink: "https://github.com/SrikarHasthi/Taskify",
+        skills: "ReactJs Typescript Scss"
     },
     {
         title: "Student Alumni Centre",
