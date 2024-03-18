@@ -66,7 +66,7 @@ export const Home = () => {
             <Contact />
             <Footer />
             {
-                false &&
+                showScrollToTop &&
 
                 <div className="scroll-to-top" onClick={handleScrollToTop}>
                      <CircularProgressbar value={scrollTop} className="scroll-progress-bar"/>
