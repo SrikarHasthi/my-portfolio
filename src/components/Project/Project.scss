@@ -145,3 +145,33 @@
 .project-card-main-container:hover .project-card-tech-used-container {
   transform: translate(-10.5%, 40%);
 }
+
+
+@media (min-width: 1000px) and (max-width: 1024px) {
+  .project-card-main-container{
+    width: 80rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .projects-container{
+    padding: 0 3rem;
+  }
+
+  .project-card-main-container{
+    width: 100%;
+    height: auto;
+  }
+  .project-card-description{
+    height: auto;
+  }
+
+  .project-card-skills-container{
+    display: none;
+  }
+
+  .project-card-main-container:hover .project-card-skills-container {
+    display: block;
+    transform: translateX(0);
+  }
+}

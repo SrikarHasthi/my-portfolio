@@ -177,3 +177,28 @@
   height: 40rem;
   left: calc(100vw - 117rem);
 }
+
+
+@media (min-width: 1000px) and (max-width: 1024px) {
+  .contacts-bottom-icon{
+    left: calc(100vw - 100rem);
+  }
+}
+
+@media (max-width: 960px) {
+  .contacts-main-container {
+    padding-bottom: 16rem;
+    h2 {
+      text-align: center;
+      padding-left: 0;
+    }
+  }
+  .contacts-sub-container {
+    flex-direction: column;
+    padding-left: 0;
+    align-items: center;
+  }
+  .contacts-bottom-icon {
+    display: none;
+  }
+}
