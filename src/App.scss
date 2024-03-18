@@ -60,7 +60,7 @@ button:disabled,
   margin-left: 4.4rem;
   font-size: 3rem;
   color: #ffff;
-  font-family: 'Bestermind', sans-serif;
+  font-family: "Bestermind", sans-serif;
 }
 
 .App {
@@ -188,7 +188,6 @@ button:disabled,
   }
 }
 
-
 .scroll-to-top {
   position: fixed;
   right: 10px;
@@ -197,6 +196,7 @@ button:disabled,
   width: 4rem;
   z-index: 999;
   display: flex;
+  cursor: pointer;
 
   button {
     width: 100%;
@@ -224,4 +224,11 @@ button:disabled,
   background: rgba(0, 0, 0, 0.5);
   outline: 0px solid #e2e3e8;
   border-radius: 10px;
+}
+
+.scroll-progress-bar {
+  position: absolute;
+  top: 0px;
+  right: -2px;
+  width: 108% !important;
 }

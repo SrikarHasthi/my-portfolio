@@ -11,6 +11,7 @@ interface Props {
         desc: string,
         demoLink: string,
         githubLink: string,
+        skills: string,
     }
 }
 
@@ -25,34 +26,37 @@ export const ProjectCard = ({ projectDetails }: Props) => {
             <div ref={ref} className={`project-card-main-container`} >
                 {/* <div className='project-card-image'>
         </div> */}
-                    <div className='project-card-title'>
-                        {projectDetails.title}
-                    </div>
-                    <div className='project-card-description'>
-                        {projectDetails.desc}
-                    </div>
-                    <div className='project-card-links-container'>
-                        {
-                            projectDetails.demoLink !== "" &&
-                            <a href={projectDetails.demoLink} target='_blank' rel="noreferrer" className='project-card-links'>
-                                <img src={demo} alt='demo' data-tooltip-id={"demo-tooltip"} />
-                                <Tooltip id={"demo-tooltip"} place="bottom">
-                                    Demo
-                                </Tooltip>
-                            </a>
-                        }
-                        {
-                            projectDetails.githubLink !== "" &&
-                            <a href={projectDetails.githubLink} target='_blank' rel="noreferrer" className='project-card-links'>
-                                <img src={code} alt='github' data-tooltip-id={"github-tooltip"} />
-                                <Tooltip id={"github-tooltip"} place="bottom">
-                                    Github
-                                </Tooltip>
-                            </a>
-                        }
-                    </div>
+                <div className='project-card-title'>
+                    {projectDetails.title}
+                </div>
+                <div className='project-card-description'>
+                    {projectDetails.desc}
+                </div>
+                <div className='project-card-links-container'>
+                    {
+                        projectDetails.demoLink !== "" &&
+                        <a href={projectDetails.demoLink} target='_blank' rel="noreferrer" className='project-card-links'>
+                            <img src={demo} alt='demo' data-tooltip-id={"demo-tooltip"} />
+                            <Tooltip id={"demo-tooltip"} place="bottom">
+                                Demo
+                            </Tooltip>
+                        </a>
+                    }
+                    {
+                        projectDetails.githubLink !== "" &&
+                        <a href={projectDetails.githubLink} target='_blank' rel="noreferrer" className='project-card-links'>
+                            <img src={code} alt='github' data-tooltip-id={"github-tooltip"} />
+                            <Tooltip id={"github-tooltip"} place="bottom">
+                                Github
+                            </Tooltip>
+                        </a>
+                    }
+                </div>
+                <div className='project-card-tech-used-container'>
+                    Technologies Used
+                </div>
                 <div className='project-card-skills-container'>
-                    React ExpressJs Scss SqlLite
+                    {projectDetails.skills}
                 </div>
             </div>
         </>

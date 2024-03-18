@@ -13,6 +13,9 @@ export const AboutMe = () => {
                     <p>
                         Hey there, I'm Srikar Hasthi, a Software Developer fueled by a love for creating tech solutions that matter. With a knack for JavaScript, Java, Python, and more, I dive deep into web development, specializing in React.js and Node.js.
                         <br /><br />
+{/* 
+                        I make handtyped organic non-AI websites and offer HDaaS (Human Developer as a Service).
+                        <br/><br/> */}
 
                         When I'm not coding, you'll catch me exploring new tech, jamming at hackathons, and diving into open-source projects. I'm all about using tech for good and love teaming up with fellow enthusiasts.
                         <br /><br />

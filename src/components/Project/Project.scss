@@ -94,7 +94,7 @@
   }
 }
 
-.project-card-main-container .project-card-skills-container {
+.project-card-skills-container {
   position: absolute;
   bottom: 0px;
   right: 0;
@@ -109,7 +109,7 @@
   transform: translateX(100%);
   transition: transform 0.5s 0.3s;
   padding: 0.825rem;
-  background: rgb(43 43 43 / 93%);
+  background: rgb(43 43 43 / 99%);
   color: rgba(234, 234, 234, 0.8);
   height: 6rem;
   text-align: left;
@@ -117,4 +117,61 @@
 
 .project-card-main-container:hover .project-card-skills-container {
   transform: translateX(0);
+}
+
+.project-card-tech-used-container{
+  font-size: 1.8rem;
+  background: rgb(43 43 43 / 99%);
+  color: rgba(234, 234, 234, 0.8);
+  text-align: left;
+  position: absolute;
+  width: 24rem;
+  height: 10rem;
+  left: 2.4rem;
+  top: -2rem;
+  -webkit-transform: translate(-110%, 40%);
+  transform: translate(-110%, 40%);
+  padding: 4rem;
+  border-radius: 0 20px 20px 0;
+  transition: -webkit-transform .9s;
+  transition: transform .9s;
+  transition: transform .9s, -webkit-transform .9s;
+  line-height: 110%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card-main-container:hover .project-card-tech-used-container {
+  transform: translate(-10.5%, 40%);
+}
+
+
+@media (min-width: 1000px) and (max-width: 1024px) {
+  .project-card-main-container{
+    width: 80rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .projects-container{
+    padding: 0 3rem;
+  }
+
+  .project-card-main-container{
+    width: 100%;
+    height: auto;
+  }
+  .project-card-description{
+    height: auto;
+  }
+
+  .project-card-skills-container{
+    display: none;
+  }
+
+  .project-card-main-container:hover .project-card-skills-container {
+    display: block;
+    transform: translateX(0);
+  }
 }
