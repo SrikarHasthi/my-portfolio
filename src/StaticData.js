@@ -77,16 +77,9 @@ export const projectDetails = [
     {
         title: "YogicLife",
         desc: "This homepage, meticulously crafted in React from a Figma design, invites you into a realm of daily practices led by traditional Indian practitioners. Explore the transformative power of yoga, and meditation, tailored for modern seekers.",
-        demoLink: "https://srikarhasthi.github.io/ours-assignment/",
+        demoLink: "https://srikarhasthi.github.io/landing-page/",
         githubLink: "",
         skills: "ReactJs Html Css Javascript"
-    },
-    {
-        title: "JobSeekr",
-        desc: "The JobSeekr project aims to create a career services platform connecting job-seeking candidates with employers. It offers a user-friendly interface for candidates to showcase profiles, while employers can post openings and manage applications.",
-        demoLink: "",
-        githubLink: "https://github.com/SrikarHasthi/JobSeekr",
-        skills: "ReactJs Css Javascript NodeJs"
     },
     {
         title: "Taskify",
@@ -96,11 +89,18 @@ export const projectDetails = [
         skills: "ReactJs Typescript Scss"
     },
     {
+        title: "JobSeekr",
+        desc: "The JobSeekr project aims to create a career services platform connecting job-seeking candidates with employers. It offers a user-friendly interface for candidates to showcase profiles, while employers can post openings and manage applications.",
+        demoLink: "",
+        githubLink: "https://github.com/SrikarHasthi/JobSeekr",
+        skills: "ReactJs Css Javascript NodeJs"
+    },
+    {
         title: "Student Alumni Centre",
         desc: "This is a web application designed for retrieving information about students and teachers within an institution. Built using Embedded JavaScript, Express.js and SQLite, it features CRUD functions using REST API's.",
         demoLink: "",
         githubLink: "https://github.com/SrikarHasthi/Student-Alumni-Centre",
-        skills: "Embedded-JavaScript Html Css SQLite"
+        skills: "Embedded-JavaScript ExpressJs Html SQLite "
     },
     {
         title: "Resume Builder",
