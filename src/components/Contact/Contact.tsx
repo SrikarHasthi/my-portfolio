@@ -6,6 +6,8 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import emailjs from '@emailjs/browser';
 import CustomLoader from '../CustomLoader';
 import { contactDetails, socialIcons } from '../../StaticData';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const Contact = () => {
 
@@ -26,10 +28,12 @@ export const Contact = () => {
             emailjs.send('service_gqc5ntd', 'template_kt1qtcf', params, {
                 publicKey: '5K03ZA3VFjj0YZxmY',
             }).then((response) => {
+                toast.success("Message Sent Successfully");
                 console.log('SUCCESS!', response.status, response.text);
                 // setIsLoading(false);
             },
                 (err) => {
+                    toast.success("Error Sending Message");
                     console.log('FAILED...', err);
                     // setIsLoading(false);
                 },
@@ -95,7 +99,7 @@ export const Contact = () => {
                     <div className='contacts-others-socials'>
                         {
                             socialIcons.map((e, id) => {
-                                return <a href={e.href} target='_blank'  rel="noreferrer" className='contacts-others-icon' key={id}>
+                                return <a href={e.href} target='_blank' rel="noreferrer" className='contacts-others-icon' key={id}>
                                     <img src={e.img} alt={e.img} />
                                 </a>
                             })
@@ -106,7 +110,10 @@ export const Contact = () => {
                     </div>
                 </div>
             </div>
-
+            <ToastContainer
+                position="bottom-right"
+                hideProgressBar={true}
+            />
         </div>
     )
 }

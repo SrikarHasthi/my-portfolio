@@ -79,21 +79,28 @@ export const projectDetails = [
         desc: "This homepage, meticulously crafted in React from a Figma design, invites you into a realm of daily practices led by traditional Indian practitioners. Explore the transformative power of yoga, and meditation, tailored for modern seekers.",
         demoLink: "https://srikarhasthi.github.io/landing-page/",
         githubLink: "",
-        skills: "ReactJs Html Css Javascript"
+        skills: "ReactJs Html CSS Javascript"
     },
     {
         title: "Taskify",
         desc: "It is a productivity app designed to enhance task management with an added timer feature. With Taskify, users can prioritize activities, set timers, and boost productivity by seamlessly integrating time management into their workflow.",
         demoLink: "https://srikarhasthi.github.io/Taskify/",
         githubLink: "https://github.com/SrikarHasthi/Taskify",
-        skills: "ReactJs Typescript Scss"
+        skills: "Typescript ReactJs SCSS"
+    },
+    {
+        title: "Movie Matrix",
+        desc: "This is a dynamic web application designed to provide users with a seamless and immersive movie browsing experience. It allows users to discover, search, and explore a vast collection of movies from The Movie Database (TMDb) API.",
+        demoLink: "https://srikarhasthi.github.io/movie-matrix/",
+        githubLink: "https://github.com/SrikarHasthi/movie-matrix",
+        skills: "ReactJs MaterialUI RestAPI Javascript"
     },
     {
         title: "JobSeekr",
         desc: "The JobSeekr project aims to create a career services platform connecting job-seeking candidates with employers. It offers a user-friendly interface for candidates to showcase profiles, while employers can post openings and manage applications.",
         demoLink: "",
         githubLink: "https://github.com/SrikarHasthi/JobSeekr",
-        skills: "ReactJs Css Javascript NodeJs"
+        skills: "ReactJs CSS Javascript NodeJs"
     },
     {
         title: "Student Alumni Centre",
@@ -107,13 +114,6 @@ export const projectDetails = [
         desc: "Resume Builder empowers users to create professional resumes by selecting templates, and customizing resumes seamlessly.It ensures seamless navigation and provides secure login and data storage.",
         demoLink: "https://srikarhasthi.github.io/resume-builder/",
         githubLink: "https://github.com/SrikarHasthi/resume-builder",
-        skills: "ReactJs Redux Firebase Css"
-    },
-    {
-        title: "E-Commerce Website",
-        desc: "An e-commerce site where users can filter, search & navigate pages of products. Each item has a description page and a cart for adding & removing items. Showcases proficiency in React, Redux, and building interactive UIs.",
-        demoLink: "https://srikarhasthi.github.io/ecommerce-website/",
-        githubLink: "https://github.com/SrikarHasthi/ecommerce-website",
-        skills: "ReactJs Redux Javascript Css"
+        skills: "ReactJs Redux Firebase CSS"
     },
 ]
