@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.2a3ac453.css",
-    "main.js": "/my-portfolio/static/js/main.a1131313.js",
+    "main.css": "/my-portfolio/static/css/main.82fddee8.css",
+    "main.js": "/my-portfolio/static/js/main.52406b0d.js",
     "static/media/Srikar_Hasthi_Resume.pdf": "/my-portfolio/static/media/Srikar_Hasthi_Resume.f159d5ee4bf087bdcaea.pdf",
     "static/media/Byeee-removebg-preview.png": "/my-portfolio/static/media/Byeee-removebg-preview.bc776ee9e1c7fae34d7c.png",
     "static/media/Meditation-bro.svg": "/my-portfolio/static/media/Meditation-bro.c0bd2f2d5f4fc377007039f8d19429be.svg",
@@ -33,11 +33,11 @@
     "static/media/css-3-svgrepo-com.svg": "/my-portfolio/static/media/css-3-svgrepo-com.60e23942f41d4dc73de0d271b4453605.svg",
     "static/media/html-5-svgrepo-com.svg": "/my-portfolio/static/media/html-5-svgrepo-com.bfc29cc664956a7748f9ee78fa82ec7b.svg",
     "static/media/send-2-svgrepo-com.svg": "/my-portfolio/static/media/send-2-svgrepo-com.74af5ea88f35f0970f3cf4475d492b9b.svg",
-    "main.2a3ac453.css.map": "/my-portfolio/static/css/main.2a3ac453.css.map",
-    "main.a1131313.js.map": "/my-portfolio/static/js/main.a1131313.js.map"
+    "main.82fddee8.css.map": "/my-portfolio/static/css/main.82fddee8.css.map",
+    "main.52406b0d.js.map": "/my-portfolio/static/js/main.52406b0d.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a3ac453.css",
-    "static/js/main.a1131313.js"
+    "static/css/main.82fddee8.css",
+    "static/js/main.52406b0d.js"
   ]
 }
