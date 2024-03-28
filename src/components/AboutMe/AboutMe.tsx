@@ -13,7 +13,7 @@ export const AboutMe = () => {
                     <p>
                         Hey there, I'm Srikar Hasthi, a Software Developer fueled by a love for creating tech solutions that matter. With a knack for JavaScript, Java, Python, and more, I dive deep into web development, specializing in React.js and Node.js.
                         <br /><br />
-{/* 
+                        {/* 
                         I make handtyped organic non-AI websites and offer HDaaS (Human Developer as a Service).
                         <br/><br/> */}
 
@@ -38,7 +38,7 @@ export const AboutMe = () => {
                                 return (
                                     <div key={id}>
                                         <div data-tooltip-id={"skills-tooltip" + id} className='about-me-skills'>
-                                            <img src={e.src} alt={e.name}/>
+                                            <img src={e.src} alt={e.name} />
                                         </div>
                                         <Tooltip id={"skills-tooltip" + id} place="bottom">
                                             {e.name}
@@ -53,7 +53,7 @@ export const AboutMe = () => {
             </div>
             <div className="about-me-image">
                 <ScrollAnimation animateIn="fadeInRight" className='about-me-imagee'>
-                    <img src={meditation} data-tooltip-id="skills-image-tooltip" alt='meditation'/>
+                    <img src={meditation} data-tooltip-id="skills-image-tooltip" alt='meditation' />
                     <Tooltip id="skills-image-tooltip" place="bottom" className='skills-image-tooltip' >
                         {"Credit: storyset.com"}
                     </Tooltip>

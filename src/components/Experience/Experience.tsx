@@ -10,7 +10,7 @@ import { animakerSkills, ctsSkills } from '../../StaticData'
 export const Experience = () => {
 
     return (
-        <div className='experience-main-conatainer'>
+        <div className='experience-main-conatainer'  id='experience'>
             <div className="experience-image">
                 <ScrollAnimation animateIn="fadeInLeft" className='experience-imagee'>
                     <img src={working} data-tooltip-id="experience-image-tooltip" alt='working'/>
