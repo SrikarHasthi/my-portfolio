@@ -1,12 +1,15 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.82fddee8.css",
-    "main.js": "/my-portfolio/static/js/main.52406b0d.js",
+    "main.css": "/my-portfolio/static/css/main.7712d20b.css",
+    "main.js": "/my-portfolio/static/js/main.ac7a53bb.js",
     "static/media/Srikar_Hasthi_Resume.pdf": "/my-portfolio/static/media/Srikar_Hasthi_Resume.f159d5ee4bf087bdcaea.pdf",
     "static/media/Byeee-removebg-preview.png": "/my-portfolio/static/media/Byeee-removebg-preview.bc776ee9e1c7fae34d7c.png",
+    "static/media/concordia_university_0.webp": "/my-portfolio/static/media/concordia_university_0.b9ec9a87a9670a47617d.webp",
     "static/media/Meditation-bro.svg": "/my-portfolio/static/media/Meditation-bro.c0bd2f2d5f4fc377007039f8d19429be.svg",
+    "static/media/Learning-bro.svg": "/my-portfolio/static/media/Learning-bro.2fd7875ba595c0bc24cb52d7586d4ed3.svg",
     "static/media/Working.svg": "/my-portfolio/static/media/Working.404315d31a0a684571ef384180e0112a.svg",
     "static/media/contactsOrange.svg": "/my-portfolio/static/media/contactsOrange.46b295a24d2aeb16b861dbb82281f438.svg",
+    "static/media/Lovely_Professional_University_logo.png": "/my-portfolio/static/media/Lovely_Professional_University_logo.38e71efa88ccf81b0ecb.png",
     "static/media/mysql-logo-svgrepo-com.svg": "/my-portfolio/static/media/mysql-logo-svgrepo-com.17e572d590819cbe5cac74acfecb45da.svg",
     "static/media/phone-svgrepo-com.svg": "/my-portfolio/static/media/phone-svgrepo-com.f49ebc88f2f87baf771718f1c47ef040.svg",
     "static/media/react.svg": "/my-portfolio/static/media/react.c60e072461a29d9c38291223075ac016.svg",
@@ -33,11 +36,11 @@
     "static/media/css-3-svgrepo-com.svg": "/my-portfolio/static/media/css-3-svgrepo-com.60e23942f41d4dc73de0d271b4453605.svg",
     "static/media/html-5-svgrepo-com.svg": "/my-portfolio/static/media/html-5-svgrepo-com.bfc29cc664956a7748f9ee78fa82ec7b.svg",
     "static/media/send-2-svgrepo-com.svg": "/my-portfolio/static/media/send-2-svgrepo-com.74af5ea88f35f0970f3cf4475d492b9b.svg",
-    "main.82fddee8.css.map": "/my-portfolio/static/css/main.82fddee8.css.map",
-    "main.52406b0d.js.map": "/my-portfolio/static/js/main.52406b0d.js.map"
+    "main.7712d20b.css.map": "/my-portfolio/static/css/main.7712d20b.css.map",
+    "main.ac7a53bb.js.map": "/my-portfolio/static/js/main.ac7a53bb.js.map"
   },
   "entrypoints": [
-    "static/css/main.82fddee8.css",
-    "static/js/main.52406b0d.js"
+    "static/css/main.7712d20b.css",
+    "static/js/main.ac7a53bb.js"
   ]
 }
