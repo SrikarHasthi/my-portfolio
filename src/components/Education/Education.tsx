@@ -15,7 +15,7 @@ export const Education = () => {
                     <div className='education-university-container'>
                         <div className='education-university'>
                             <div className='education-university-image'>
-                                <img src={concordia} />
+                                <img src={concordia} alt='concordia'/>
                             </div>
                             <div className='education-university-details'>
                                 <div className='education-university-title'>Concordia University</div>
@@ -26,7 +26,7 @@ export const Education = () => {
                         <div className='education-university-border'></div>
                         <div className='education-university'>
                             <div className='education-university-image'>
-                                <img src={lpu} />
+                                <img src={lpu} alt='lpu'/>
                             </div>
                             <div className='education-university-details'>
                                 <div className='education-university-title'>Lovely Professional University</div>

@@ -75,7 +75,7 @@ export const Project = () => {
         <div className="scroll-to-top" onClick={handleScrollToTop}>
           <CircularProgressbar value={scrollTop} className="scroll-progress-bar" />
           <button>
-            <img src={scroll} />
+            <img src={scroll} alt='scrolltotop'/>
           </button>
 
         </div>
