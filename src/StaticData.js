@@ -107,7 +107,7 @@ export const projectDetails = [
         desc: "This is a web application designed for retrieving information about students and teachers within an institution. Built using Embedded JavaScript, Express.js and SQLite, it features CRUD functions using REST API's.",
         demoLink: "",
         githubLink: "https://github.com/SrikarHasthi/Student-Alumni-Centre",
-        skills: "Embedded-JavaScript ExpressJs Html SQLite "
+        skills: "EJS ExpressJs Html SQLite "
     },
     {
         title: "Resume Builder",
