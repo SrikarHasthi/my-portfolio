@@ -4,11 +4,21 @@ import { useState } from 'react';
 // @ts-ignore
 import resume from '../../assets/Srikar_Hasthi_Resume.pdf';
 import "./Header.scss";
+import ReactGA from 'react-ga4';
 
 export const Header = () => {
-  const [isActive, setIsActive] = useState(false)
+  const [isActive, setIsActive] = useState(false);
 
-  function closeMenu() {
+  const headerNav = (name:string) =>{
+    ReactGA.event({
+      category: 'Button Click',
+      action: 'Clicked Header Nav',
+      label: name,
+    });
+    closeMenu();
+  }
+
+  const closeMenu = () => {
     setIsActive(false)
   }
 
@@ -22,25 +32,25 @@ export const Header = () => {
 
 
         <nav className={isActive ? 'active' : ''}>
-          <NavHashLink smooth to="#home" onClick={closeMenu}>
+          <NavHashLink smooth to="#home" onClick={()=>headerNav("home")}>
             Home
           </NavHashLink>
-          <NavHashLink smooth to="#project" onClick={closeMenu}>
+          <NavHashLink smooth to="#project" onClick={()=>headerNav("project")}>
             Project
           </NavHashLink>
-          <NavHashLink smooth to="#aboutMe" onClick={closeMenu}>
+          <NavHashLink smooth to="#aboutMe" onClick={()=>headerNav("aboutMe")}>
             About me
           </NavHashLink>
-          <NavHashLink smooth to="#experience" onClick={closeMenu}>
+          <NavHashLink smooth to="#experience" onClick={()=>headerNav("experience")}>
             Experience
           </NavHashLink>
-          <NavHashLink smooth to="#education" onClick={closeMenu}>
+          <NavHashLink smooth to="#education" onClick={()=>headerNav("education")}>
             Education
           </NavHashLink>
-          <NavHashLink smooth to="#contact" onClick={closeMenu}>
+          <NavHashLink smooth to="#contact" onClick={()=>headerNav("contact")}>
             Contact
           </NavHashLink>
-          <a href={resume} download="Srikar_Hasthi_Resume.pdf" className="button">
+          <a href={resume} download="Srikar_Hasthi_Resume.pdf" className="button" onClick={()=>headerNav("resume")}>
             Resume 
           </a>
         </nav>

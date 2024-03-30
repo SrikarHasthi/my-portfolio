@@ -4,7 +4,8 @@ import { ProjectCard } from './ProjectCard'
 import ScrollAnimation from 'react-animate-on-scroll'
 import { projectDetails } from '../../StaticData'
 import { CircularProgressbar } from "react-circular-progressbar";
-import scroll from '../../assets/scrollToTop.svg'
+import scroll from '../../assets/scrollToTop.svg';
+import ReactGA from 'react-ga4';
 
 export const Project = () => {
   const [showScrollToTop, setShowScrollToTop] = useState(false);
@@ -23,6 +24,11 @@ export const Project = () => {
   }, [])
 
   const handleScrollToTop = () => {
+    ReactGA.event({
+      category: 'Button Click',
+      action: 'Clicked on Scroll To Top',
+      label: 'Home Page',
+    });
     window.scrollTo({ top: 0, behavior: 'smooth' })
   };
 
