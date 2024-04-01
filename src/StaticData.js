@@ -11,14 +11,17 @@ import twitter2 from './assets/twitter-color-svgrepo-com.svg';
 export const socialIcons = [
     {
         img: linkedIn,
+        name: "linkedIn",
         href: "https://www.linkedin.com/in/srikarhasthi"
     },
     {
         img: github,
-        href: "https://github.com/SrikarHasthi/"
+        name: "github",
+        href: "https://github.com/SrikarHasthi/",
     },
     {
         img: twitter,
+        name: "twitter",
         href: "https://twitter.com/Srikar1010"
     },
 ];
@@ -26,14 +29,17 @@ export const socialIcons = [
 export const introSocialIcons = [
     {
         img: linkedIn2,
+        name: "linkedIn2",
         href: "https://www.linkedin.com/in/srikarhasthi"
     },
     {
         img: github2,
+        name: "github2",
         href: "https://github.com/SrikarHasthi/"
     },
     {
         img: twitter2,
+        name: "twitter2",
         href: "https://twitter.com/Srikar1010"
     },
 ];
@@ -41,16 +47,19 @@ export const introSocialIcons = [
 export const contactDetails = [
     {
         img: mail,
+        name: "mail",
         desc: "srikarhasthi@gmail.com",
         href: "mailto:srikarhasthi@gmail.com"
     },
     {
         img: phone,
+        name: "phone",
         desc: "+1 (514) 586-7745",
         href: "tel:+15145867745"
     },
     {
         img: location,
+        name: "location",
         desc: "Montreal, Quebec, Canada - H3H 2N9",
         href: "https://maps.app.goo.gl/JtxQg6YH6hQ9uNjf9"
     },
