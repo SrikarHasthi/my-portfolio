@@ -97,7 +97,7 @@ export const Contact = () => {
                         contactDetails.map((e, id) => {
                             return (
                                 <div className='contacts-others' key={id}>
-                                    <a className='contacts-others-icon' href={e.href} target='_blank' rel="noreferrer"  onClick={() => handleGa(e.img)}>
+                                    <a className='contacts-others-icon' href={e.href} target='_blank' rel="noreferrer"  onClick={() => handleGa(e.name)}>
                                         <img src={e.img} alt={e.desc} />
                                     </a>
                                     <p>{e.desc}</p>
@@ -108,7 +108,7 @@ export const Contact = () => {
                     <div className='contacts-others-socials'>
                         {
                             socialIcons.map((e, id) => {
-                                return <a href={e.href} target='_blank' rel="noreferrer" className='contacts-others-icon' key={id}  onClick={() => handleGa(e.img)}>
+                                return <a href={e.href} target='_blank' rel="noreferrer" className='contacts-others-icon' key={id}  onClick={() => handleGa(e.name)}>
                                     <img src={e.img} alt={e.img} />
                                 </a>
                             })

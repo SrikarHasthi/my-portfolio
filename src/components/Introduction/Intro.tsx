@@ -135,7 +135,7 @@ const Intro = () => {
                                             target="_blank"
                                             rel="noreferrer"
                                             key={id}
-                                            onClick={() => handleGa(e.img)}
+                                            onClick={() => handleGa(e.name)}
                                         >
                                             <img src={e.img} alt={e.img} />
                                         </a>
