@@ -12,8 +12,8 @@ export const Header = () => {
   const headerNav = (name:string) =>{
     ReactGA.event({
       category: 'Button Click',
-      action: 'Clicked Header Nav',
-      label: name,
+      action: `clicked ${name}`,
+      label: 'header_nav',
     });
     closeMenu();
   }
