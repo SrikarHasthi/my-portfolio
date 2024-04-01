@@ -11,6 +11,7 @@ import 'animate.css';
 import { BrowserRouter } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
 import { introSocialIcons } from "../../StaticData";
+import ReactGA from 'react-ga4';
 
 const Intro = () => {
     const [init, setInit] = useState(false);
@@ -24,6 +25,14 @@ const Intro = () => {
             setInit(true);
         });
     }, []);
+
+    const handleGa = (name: string) => {
+        ReactGA.event({
+            category: 'Button Click',
+            action: `clicked ${name}`,
+            label: 'social_icons',
+        });
+    }
 
     return (
         <div className="App" id="home">
@@ -114,7 +123,7 @@ const Intro = () => {
                     <div className="main-intro-contact-container">
                         <div className="main-intro-contact-button  animate__animated animate__fadeInUp animate__delay-1s">
                             <BrowserRouter>
-                                <NavHashLink smooth to="#contact" className="button">Contact</NavHashLink>
+                                <NavHashLink smooth to="#contact" className="button"  onClick={() => handleGa("intro contact")}>Contact</NavHashLink>
                             </BrowserRouter>
                         </div>
                         <div className="main-intro-contact-icons  animate__animated animate__fadeInUp animate__delay-1s">
@@ -126,6 +135,7 @@ const Intro = () => {
                                             target="_blank"
                                             rel="noreferrer"
                                             key={id}
+                                            onClick={() => handleGa(e.img)}
                                         >
                                             <img src={e.img} alt={e.img} />
                                         </a>

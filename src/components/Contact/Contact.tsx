@@ -8,6 +8,7 @@ import CustomLoader from '../CustomLoader';
 import { contactDetails, socialIcons } from '../../StaticData';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ReactGA from 'react-ga4';
 
 export const Contact = () => {
 
@@ -40,6 +41,14 @@ export const Contact = () => {
             );
             setIsLoading(false);
         }, 1000);
+    }
+
+    const handleGa = (name: string) => {
+        ReactGA.event({
+            category: 'Button Click',
+            action: `clicked ${name}`,
+            label: 'social_icons',
+        });
     }
 
     return (
@@ -88,7 +97,7 @@ export const Contact = () => {
                         contactDetails.map((e, id) => {
                             return (
                                 <div className='contacts-others' key={id}>
-                                    <a className='contacts-others-icon' href={e.href} target='_blank' rel="noreferrer">
+                                    <a className='contacts-others-icon' href={e.href} target='_blank' rel="noreferrer"  onClick={() => handleGa(e.img)}>
                                         <img src={e.img} alt={e.desc} />
                                     </a>
                                     <p>{e.desc}</p>
@@ -99,7 +108,7 @@ export const Contact = () => {
                     <div className='contacts-others-socials'>
                         {
                             socialIcons.map((e, id) => {
-                                return <a href={e.href} target='_blank' rel="noreferrer" className='contacts-others-icon' key={id}>
+                                return <a href={e.href} target='_blank' rel="noreferrer" className='contacts-others-icon' key={id}  onClick={() => handleGa(e.img)}>
                                     <img src={e.img} alt={e.img} />
                                 </a>
                             })
