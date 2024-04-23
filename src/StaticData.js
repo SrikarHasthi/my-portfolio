@@ -93,9 +93,9 @@ export const projectDetails = [
     {
         title: "Taskify",
         desc: "It is a productivity app designed to enhance task management with an added timer feature. With Taskify, users can prioritize activities, set timers, and boost productivity by seamlessly integrating time management into their workflow.",
-        demoLink: "https://srikarhasthi.github.io/Taskify/",
-        githubLink: "https://github.com/SrikarHasthi/Taskify",
-        skills: "Typescript ReactJs SCSS"
+        demoLink: "http://taskify-react.s3-website.us-east-2.amazonaws.com",
+        githubLink: "https://github.com/SrikarHasthi/taskify",
+        skills: "Typescript Java Spring-Boot AWS"
     },
     {
         title: "Movie Matrix",
