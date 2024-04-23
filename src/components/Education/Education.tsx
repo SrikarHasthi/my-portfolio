@@ -20,7 +20,7 @@ export const Education = () => {
                             <div className='education-university-details'>
                                 <div className='education-university-title'>Concordia University</div>
                                 <div className='education-university-degree'>Masters in Software Engineering</div>
-                                <div className='education-university-duration'>Sep 2022 - Dec 2023</div>
+                                <div className='education-university-duration'>Sep 2022 - Apr 2024</div>
                             </div>
                         </div>
                         <div className='education-university-border'></div>
