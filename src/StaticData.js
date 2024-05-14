@@ -60,8 +60,8 @@ export const contactDetails = [
     {
         img: location,
         name: "location",
-        desc: "Montreal, Quebec, Canada - H3H 2N9",
-        href: "https://maps.app.goo.gl/JtxQg6YH6hQ9uNjf9"
+        desc: "Canada",
+        href: "https://maps.app.goo.gl/kf5pT4RXNgjQ9FEA8"
     },
 ]
 
