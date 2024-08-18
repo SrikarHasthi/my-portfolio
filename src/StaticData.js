@@ -84,18 +84,11 @@ export const ctsSkills = [
 
 export const projectDetails = [
     {
-        title: "YogicLife",
-        desc: "This homepage, meticulously crafted in React from a Figma design, invites you into a realm of daily practices led by traditional Indian practitioners. Explore the transformative power of yoga, and meditation, tailored for modern seekers.",
-        demoLink: "https://srikarhasthi.github.io/landing-page/",
-        githubLink: "",
-        skills: "ReactJs Html CSS Javascript"
-    },
-    {
-        title: "Taskify",
-        desc: "It is a productivity app designed to enhance task management with an added timer feature. With Taskify, users can prioritize activities, set timers, and boost productivity by seamlessly integrating time management into their workflow.",
-        demoLink: "http://taskify-react.s3-website.us-east-2.amazonaws.com",
-        githubLink: "https://github.com/SrikarHasthi/taskify",
-        skills: "Typescript Java Spring-Boot AWS"
+        title: "MarketPlaceX",
+        desc: "This eCommerce website showcases a appealing and user-friendly interface, designed for seamless navigation across devices. Offering a smooth and intuitive shopping experience, making it easy to browse, select, and manage their purchases.",
+        demoLink: "https://srikarhasthi.github.io/marketplacex",
+        githubLink: "https://github.com/SrikarHasthi/marketplacex",
+        skills: "ReactJs Redux React-Bootstrap Javascript"
     },
     {
         title: "Movie Matrix",
@@ -105,18 +98,25 @@ export const projectDetails = [
         skills: "ReactJs MaterialUI RestAPI Javascript"
     },
     {
+        title: "Taskify",
+        desc: "It is a productivity app designed to enhance task management with an added timer feature. With Taskify, users can prioritize activities, set timers, and boost productivity by seamlessly integrating time management into their workflow.",
+        demoLink: "http://taskify-react.s3-website.us-east-2.amazonaws.com",
+        githubLink: "https://github.com/SrikarHasthi/taskify",
+        skills: "Typescript Java Spring-Boot AWS"
+    },
+    {
+        title: "YogicLife",
+        desc: "This homepage, meticulously crafted in React from a Figma design, invites you into a realm of daily practices led by traditional Indian practitioners. Explore the transformative power of yoga, and meditation, tailored for modern seekers.",
+        demoLink: "https://srikarhasthi.github.io/landing-page/",
+        githubLink: "",
+        skills: "ReactJs Html CSS Javascript"
+    },
+    {
         title: "JobSeekr",
         desc: "The JobSeekr project aims to create a career services platform connecting job-seeking candidates with employers. It offers a user-friendly interface for candidates to showcase profiles, while employers can post openings and manage applications.",
         demoLink: "",
         githubLink: "https://github.com/SrikarHasthi/JobSeekr",
         skills: "ReactJs CSS Javascript NodeJs"
-    },
-    {
-        title: "Student Alumni Centre",
-        desc: "This is a web application designed for retrieving information about students and teachers within an institution. Built using Embedded JavaScript, Express.js and SQLite, it features CRUD functions using REST API's.",
-        demoLink: "",
-        githubLink: "https://github.com/SrikarHasthi/Student-Alumni-Centre",
-        skills: "EJS ExpressJs Html SQLite "
     },
     {
         title: "Resume Builder",
