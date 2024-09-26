@@ -1,11 +1,11 @@
-    import React from 'react'
-    import { Tooltip } from 'react-tooltip'
-    import working from '../../assets/Working.svg'
-    import loading from '../../assets/loading-svgrepo-com.svg'
-    import './Experience.scss'
-    import ScrollAnimation from 'react-animate-on-scroll';
-    import { ExperienceSkillsbadge } from './ExperienceSkillsBadge';
-    import { animakerSkills, ctsSkills, fyntuneSkills } from '../../StaticData'
+import React from 'react'
+import { Tooltip } from 'react-tooltip'
+import working from '../../assets/Working.svg'
+import loading from '../../assets/loading-svgrepo-com.svg'
+import './Experience.scss'
+import ScrollAnimation from 'react-animate-on-scroll';
+import { ExperienceSkillsbadge } from './ExperienceSkillsBadge';
+import { animakerSkills, ctsSkills, fyntuneSkills } from '../../StaticData'
 
 export const Experience = () => {
 
