@@ -43,7 +43,7 @@ export const Education = () => {
                 <ScrollAnimation animateIn="fadeInRight" className='education-imagee'>
                     <img src={education} data-tooltip-id="education-image-tooltip" alt='education' />
                     <Tooltip id="education-image-tooltip" place="bottom" className='education-image-tooltip' >
-                        {"Credit: storyset.com"}
+                        {""}
                     </Tooltip>
                 </ScrollAnimation>
             </div>
