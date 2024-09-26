@@ -80,7 +80,15 @@ export const ctsSkills = [
     "MySql",
     "Entity Framework",
     "MVC",
-]
+];
+
+export const fyntuneSkills = [
+    "ReactJs",
+    "Node.js",
+    "PostgreSQL",
+    "Rest APIs",
+    "Git"
+];
 
 export const projectDetails = [
     {
